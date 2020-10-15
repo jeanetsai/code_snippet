@@ -1,4 +1,4 @@
-
+Scholar Clicker saves and hacks 
 ===================================
 
 for(var i=0;i<3000;i++){
@@ -8,11 +8,6 @@ document.getElementById("muster").click();
 
 for(var i=0;i<1500;i++){
 document.getElementById("write_code").click();
-}
-
-
-for(var i=0;i<3000;i++){
-document.getElementById("muster").click();
 }
 
 for(var i=0;i<3500;i++){
