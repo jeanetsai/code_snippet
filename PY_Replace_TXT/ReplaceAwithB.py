@@ -20,5 +20,5 @@ print(array_docA)
 
 with open("output.txt", "w") as txt_file:
     for line in array_docA:
-        txt_file.write("".join(line))
-        # works with any number of elements in a line
+        txt_file.write("".join(line))       
+f.close()
