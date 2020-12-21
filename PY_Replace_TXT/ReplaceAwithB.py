@@ -3,12 +3,12 @@ import io
 #使用注意:a.txt和b.txt最後一行要換行
 with io.open('a.txt','r',encoding ='UTF-8') as f:
     array_docA=f.readlines()
-    print(array_docA)      
+    #print(array_docA)      
 f.close()
 
 with io.open('b.txt','r',encoding ='UTF-8') as f:
     array_docB=f.readlines() 
-    print(array_docB)      
+    #print(array_docB)      
 f.close()
     
 for n, i in enumerate(array_docA):
@@ -16,9 +16,9 @@ for n, i in enumerate(array_docA):
         if i == y:
             array_docA[n] = ''
 
-print(array_docA)
+#print(array_docA)
 
-with open("output.txt", "w") as txt_file:
+with io.open('output.txt','w',encoding ='UTF-8') as txt_file:
     for line in array_docA:
-        txt_file.write("".join(line))       
-f.close()
+        txt_file.write("".join(line))
+        # works with any number of elements in a line
