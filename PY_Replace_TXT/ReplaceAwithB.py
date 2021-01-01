@@ -22,3 +22,4 @@ with io.open('output.txt','w',encoding ='UTF-8') as txt_file:
     for line in array_docA:
         txt_file.write("".join(line))
         # works with any number of elements in a line
+txt_file.close()
